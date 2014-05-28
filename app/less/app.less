@@ -1,0 +1,161 @@
+body {
+  background-color: orange;
+  color: #003DF5;
+  width: 100%;
+}
+
+/*
+***********************
+* =header
+***********************
+*/
+
+h1 {
+  display: inline-block;
+  float: right;
+  color: red;
+  margin-top: 10px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 70px;
+}
+
+nav {
+  vertical-align: center; //not working
+}
+
+nav > a {
+  margin: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+nav > a:hover {
+  color: gray;
+}
+
+/*
+***********************
+* =forms
+***********************
+*/
+
+// #forms {
+//   width: 100%;
+//   text-align: center;
+//   margin: auto;
+// }
+
+.form {
+  background-color: gray;
+  display: inline-block;
+  border: 7px dashed black;
+  margin: 10px;
+  width: 350px;
+  height: 300px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.form input, .form select, .form button {
+  margin: 5px;
+  max-width: 240px;
+}
+
+.form span {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.form h2 {
+  font-size: 50px;
+  margin: 5px;
+}
+
+.songform {
+  float: right;
+}
+
+.albumform {
+  margin: auto;
+}
+
+
+/*
+***********************
+* =indexpages
+***********************
+*/
+
+.album, .artist {
+  display: inline-block;
+}
+
+#artists {
+  text-align: center;
+}
+
+.artist {
+  width: 600px;
+  height: 400px;
+  margin: 5px;
+}
+
+.artist > img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.album {
+  width: 300px;
+  margin: 5px;
+}
+
+.album > a > img {
+  width: 100%;
+}
+
+#albums {
+  text-align: center;
+}
+
+#songs {
+  width: 1000px;
+  border: 3px solid black;
+  margin: auto;
+}
+
+#songs > thead {
+  text-align: left;
+}
+
+/*
+***********************
+* =showpages
+***********************
+*/
+
+.albumphoto {
+  width: 545px;
+  display: inline-block;
+}
+
+.albumphoto > img {
+  width: 100%;
+}
+
+.songs {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.song > span {
+  display: inline-block;
+  width: 250px;
+}

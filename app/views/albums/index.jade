@@ -1,0 +1,19 @@
+extends ../shared/template
+
+block content
+
+  h2 Albums
+
+  form(method='get', action='/chimeras/search')
+  span Filter By Artist
+  select(name='artist')
+    each artist in artists
+      option(value=artist.name)= artist.name
+  button Search
+
+
+  #albums
+    each album in albums
+      .album
+        a(href='/albums/#{album._id}')
+          img(src='/img/#{album.artist.folder}/albums/#{album.folder}/#{album.albumphoto}')

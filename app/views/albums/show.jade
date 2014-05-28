@@ -1,0 +1,13 @@
+extends ../shared/template
+
+block content
+
+  h3 #{album.title} - #{album.artist.name}
+  #album
+    .albumphoto
+      img(src='/img/#{album.artist.folder}/albums/#{album.folder}/#{album.albumphoto}')
+    .songs
+      each song in songs
+        .song
+          span= song.title
+          audio(src='/audios/#{song.album.artist.folder}/#{song.album.folder}/#{song.songmp3}', controls=true)

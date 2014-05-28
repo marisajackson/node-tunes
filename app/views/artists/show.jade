@@ -1,0 +1,23 @@
+extends ../shared/template
+
+block content
+
+  h2 Artists
+
+  h2 Songs
+  table#songs
+    thead
+      th Play
+      th Title
+      th Album
+      th Artist
+      th Genres
+    tbody
+      each song in songs
+        tr
+          td
+            audio(src='/audios/#{song.album.artist.folder}/#{song.album.folder}/#{song.songmp3}', controls=true)
+          td= song.title
+          td= song.album.title
+          td= song.album.artist.name
+          td genre genre genre

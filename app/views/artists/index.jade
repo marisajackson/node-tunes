@@ -1,0 +1,12 @@
+extends ../shared/template
+
+block content
+
+  h2 Artists
+
+  #artists
+    each artist in artists
+      .artist
+        a(href='/albums/#{artist._id}')
+          h3= artist.name
+          img(src='/img/#{artist.folder}/#{artist.artistphoto}')
